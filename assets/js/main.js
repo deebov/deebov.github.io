@@ -2,6 +2,7 @@ window.addEventListener("load", e => {
   const t = $("#loader");
   setTimeout(() => {
     t.style.opacity = "0";
+    typingEffect();
   }, 4000)
   setTimeout(() => {
     t.style.display = "none"
@@ -154,4 +155,4 @@ function setTyped(e, t = {}) {
     n.start()
   })
 }
-window.addEventListener("scroll", updatePosition, !1), window.addEventListener("resize", updatePosition, !1), modalInit(), navScroll(), typingEffect();
+window.addEventListener("scroll", updatePosition, !1), window.addEventListener("resize", updatePosition, !1), modalInit(), navScroll();
